@@ -20,17 +20,17 @@ The dataset was obtained from [Kaggle's World Layoff Dataset]([https://www.kaggl
 - **GitHub**
 - **VS Code** (for writing and organizing SQL queries)
 
----
-
-## 🔍 Key Business Questions Explored
-- 🔹 Which companies recorded the highest number of layoffs?
-- 🔹 What industries were most affected globally?
-- 🔹 Which countries experienced the most layoffs?
-- 🔹 What was the trend of layoffs over the years?
-- 🔹 How does the percentage of laid-off employees vary by company size?
 
 ---
 
+## Key Business Questions Explored
+-  Which companies recorded the highest number of layoffs?
+-  What industries were most affected globally?
+-  Which countries experienced the most layoffs?
+-  What was the trend of layoffs over the years?
+-  How does the percentage of laid-off employees vary by company size?
+
+---
 ## Sample SQL Queries
 
 ```sql
@@ -52,3 +52,16 @@ SELECT YEAR(date) AS year, SUM(total_laid_off) AS yearly_layoffs
 FROM layoffs
 GROUP BY YEAR(date)
 ORDER BY year;
+
+
+---
+## Key Insights
+Tech companies dominate the top of the layoffs list, especially post-2020.
+
+United States, India, and Canada had the highest layoffs globally.
+
+Layoffs spiked significantly in 2022 and 2023, particularly in startups and public companies.
+
+Tech, Finance, and Consumer industries were among the most affected sectors.
+
+Smaller companies (under 500 employees) experienced higher layoff percentages on average.
